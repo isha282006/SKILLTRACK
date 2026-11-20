@@ -1,0 +1,22 @@
+/* SkillTrack - Dashboard Specific Styles */
+.dashboard-ledger-cell {
+  border-right: 1px solid var(--lab-navy);
+  border-bottom: 1px solid var(--lab-navy);
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+}
+
+.proficiency-block {
+  width: 14px;
+  height: 6px;
+  border: 1px solid var(--lab-navy);
+}
+
+.table-editorial th {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  background-color: var(--lab-ivory-light);
+  border-bottom: 1px solid var(--lab-navy);
+}
+

@@ -1,0 +1,487 @@
+/* ==========================================================================
+   SkillTrack - Career Intelligence Lab (Swiss Editorial Design System)
+   Colors:
+     - Midnight Navy: #111827
+     - Warm Ivory:    #F4F0E8
+     - Electric Lime: #C5F36B
+     - Cobalt Blue:   #5265E8
+     - Coral:         #F28B70
+   ========================================================================== */
+
+:root {
+  --lab-navy: #111827;
+  --lab-ivory: #F4F0E8;
+  --lab-ivory-light: #FAF8F5;
+  --lab-ivory-dark: #E6DFC5;
+  --lab-ivory-card: #FFFFFF;
+  --lab-lime: #C5F36B;
+  --lab-cobalt: #5265E8;
+  --lab-coral: #F28B70;
+  --lab-border: #111827;
+  --lab-border-subtle: rgba(17, 24, 39, 0.14);
+  --lab-text-muted: #525a66;
+
+  --font-editorial: 'Space Grotesk', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+/* Base Editorial Theme */
+.editorial-page {
+  background-color: var(--lab-ivory);
+  color: var(--lab-navy);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Headings & Monospace */
+.editorial-title {
+  font-family: var(--font-editorial);
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.font-editorial {
+  font-family: var(--font-editorial) !important;
+}
+
+.font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+.mono-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Borders & Rules */
+.border-lab-black {
+  border: 1px solid var(--lab-navy) !important;
+}
+
+.border-lab-subtle {
+  border: 1px solid var(--lab-border-subtle) !important;
+}
+
+.border-b-lab {
+  border-bottom: 1px solid var(--lab-navy);
+}
+
+.border-t-lab {
+  border-top: 1px solid var(--lab-navy);
+}
+
+.border-r-lab {
+  border-right: 1px solid var(--lab-navy);
+}
+
+.border-l-lab {
+  border-left: 1px solid var(--lab-navy);
+}
+
+/* Intentional Color Utilities (No generic gradients) */
+.bg-lab-ivory { background-color: var(--lab-ivory) !important; }
+.bg-lab-ivory-light { background-color: var(--lab-ivory-light) !important; }
+.bg-lab-navy { background-color: var(--lab-navy) !important; color: #FFFFFF !important; }
+.bg-lab-lime { background-color: var(--lab-lime) !important; color: var(--lab-navy) !important; }
+.bg-lab-cobalt { background-color: var(--lab-cobalt) !important; color: #FFFFFF !important; }
+.bg-lab-coral { background-color: var(--lab-coral) !important; color: var(--lab-navy) !important; }
+
+.text-lab-navy { color: var(--lab-navy) !important; }
+.text-lab-lime { color: var(--lab-lime) !important; }
+.text-lab-cobalt { color: var(--lab-cobalt) !important; }
+.text-lab-coral { color: var(--lab-coral) !important; }
+
+/* Swiss Pill Badges */
+.lab-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--lab-navy);
+  border-radius: 9999px;
+  background-color: transparent;
+}
+
+.lab-pill-lime {
+  background-color: var(--lab-lime);
+  color: var(--lab-navy);
+  border-color: var(--lab-navy);
+}
+
+.lab-pill-dark {
+  background-color: var(--lab-navy);
+  color: #FFFFFF;
+  border-color: var(--lab-navy);
+}
+
+.lab-pill-coral {
+  background-color: var(--lab-coral);
+  color: var(--lab-navy);
+  border-color: var(--lab-navy);
+}
+
+.lab-pill-cobalt {
+  background-color: var(--lab-cobalt);
+  color: #FFFFFF;
+  border-color: var(--lab-navy);
+}
+
+/* Editorial Buttons */
+.btn-lab-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2rem;
+  font-family: var(--font-editorial);
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--lab-navy);
+  color: #FFFFFF;
+  border: 1px solid var(--lab-navy);
+  border-radius: 0px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-lab-primary:hover {
+  background-color: var(--lab-cobalt);
+  color: #FFFFFF;
+  border-color: var(--lab-navy);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--lab-navy);
+}
+
+.btn-lab-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2rem;
+  font-family: var(--font-editorial);
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--lab-navy);
+  border: 1px solid var(--lab-navy);
+  border-radius: 0px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-lab-secondary:hover {
+  background-color: var(--lab-navy);
+  color: #FFFFFF;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--lab-cobalt);
+}
+
+.btn-lab-lime {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2rem;
+  font-family: var(--font-editorial);
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--lab-lime);
+  color: var(--lab-navy);
+  border: 1px solid var(--lab-navy);
+  border-radius: 0px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.btn-lab-lime:hover {
+  background-color: #FFFFFF;
+  color: var(--lab-navy);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px var(--lab-navy);
+}
+
+/* Editorial Block Styles */
+.editorial-block {
+  background-color: #FFFFFF;
+  border: 1px solid var(--lab-navy);
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editorial-block:hover {
+  box-shadow: 6px 6px 0px var(--lab-navy);
+  transform: translate(-2px, -2px);
+}
+
+.editorial-block-dark {
+  background-color: var(--lab-navy);
+  color: #FFFFFF;
+  border: 1px solid var(--lab-navy);
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editorial-block-dark:hover {
+  box-shadow: 6px 6px 0px var(--lab-lime);
+  transform: translate(-2px, -2px);
+}
+
+/* Number Index Tags */
+.editorial-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--lab-navy);
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--lab-lime);
+  border: 1px solid var(--lab-navy);
+}
+
+/* Interactive Transformation Pipeline Tabs */
+.pipeline-step-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--lab-text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.pipeline-step-btn.active {
+  color: var(--lab-navy);
+  border-bottom-color: var(--lab-navy);
+  background-color: rgba(197, 243, 107, 0.3);
+  font-weight: 700;
+}
+
+/* Grid & Layout Helpers */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+/* Pulse indicator for live laboratory feeds */
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--lab-lime);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 2px var(--lab-navy);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .editorial-title {
+    font-size: 2.75rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .editorial-title {
+    font-size: 2.2rem !important;
+  }
+  .btn-lab-primary,
+  .btn-lab-secondary,
+  .btn-lab-lime {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+/* ==========================================================================
+   Universal Swiss Editorial Form, Card, Table & Navigation Classes
+   ========================================================================== */
+
+/* Universal Editorial Containers */
+.card-editorial {
+  background-color: #FFFFFF;
+  border: 1px solid var(--lab-navy);
+  border-radius: 0px !important;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.card-editorial-header {
+  border-bottom: 1px solid var(--lab-navy);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Universal Editorial Tables */
+.table-editorial {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+  border: 1px solid var(--lab-navy);
+  font-family: var(--font-sans);
+}
+
+.table-editorial thead th {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: var(--lab-ivory-light);
+  color: var(--lab-navy);
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--lab-navy);
+  border-right: 1px solid rgba(17, 24, 39, 0.08);
+  font-weight: 700;
+}
+
+.table-editorial tbody td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+
+.table-editorial tbody tr:hover {
+  background-color: rgba(244, 240, 232, 0.4);
+}
+
+/* Universal Editorial Forms */
+.form-label-editorial {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--lab-navy);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.form-control-editorial,
+.form-select-editorial {
+  width: 100%;
+  border: 1px solid var(--lab-navy) !important;
+  border-radius: 0px !important;
+  background-color: #FFFFFF !important;
+  color: var(--lab-navy) !important;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  padding: 0.65rem 0.9rem;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.form-control-editorial:focus,
+.form-select-editorial:focus {
+  outline: none !important;
+  border-color: var(--lab-cobalt) !important;
+  box-shadow: 3px 3px 0px var(--lab-navy) !important;
+}
+
+/* Editorial Button Utilities */
+.btn-lab-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid var(--lab-navy);
+  border-radius: 0px !important;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.btn-lab-sm-navy {
+  background-color: var(--lab-navy);
+  color: #FFFFFF;
+}
+
+.btn-lab-sm-navy:hover {
+  background-color: var(--lab-cobalt);
+  color: #FFFFFF;
+  box-shadow: 2px 2px 0px var(--lab-navy);
+}
+
+.btn-lab-sm-lime {
+  background-color: var(--lab-lime);
+  color: var(--lab-navy);
+}
+
+.btn-lab-sm-lime:hover {
+  background-color: #FFFFFF;
+  color: var(--lab-navy);
+  box-shadow: 2px 2px 0px var(--lab-navy);
+}
+
+.btn-lab-sm-outline {
+  background-color: #FFFFFF;
+  color: var(--lab-navy);
+}
+
+.btn-lab-sm-outline:hover {
+  background-color: var(--lab-navy);
+  color: #FFFFFF;
+  box-shadow: 2px 2px 0px var(--lab-navy);
+}
+
+/* Editorial Badges & Ledger Items */
+.badge-editorial {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--lab-navy);
+  border-radius: 0px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.badge-editorial-lime {
+  background-color: var(--lab-lime);
+  color: var(--lab-navy);
+}
+
+.badge-editorial-cobalt {
+  background-color: var(--lab-cobalt);
+  color: #FFFFFF;
+}
+
+.badge-editorial-coral {
+  background-color: var(--lab-coral);
+  color: var(--lab-navy);
+}
+
+.badge-editorial-navy {
+  background-color: var(--lab-navy);
+  color: #FFFFFF;
+}
+
+.badge-editorial-ivory {
+  background-color: var(--lab-ivory-light);
+  color: var(--lab-navy);
+}
