@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: skilltrack-backend
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DB_NAME
+        value: skilltrack_db

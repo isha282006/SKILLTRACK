@@ -27,6 +27,7 @@ backend/uploads/resumes/sample-resume.pdf
 .DS_Store
 Thumbs.db
 *.log
+.vercel/
 
 # Legacy Python virtual environments and caches (preserved)
 venv/
