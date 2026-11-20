@@ -1,6 +1,27 @@
 # SkillTrack – Student Skill & Placement Management Platform
 ## Career Intelligence Lab (React.js + Node.js + Express + MySQL)
 
+[![Live Demo on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel%20Production-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://frontend-delta-one-5c2af1modk.vercel.app)
+[![API on Render](https://img.shields.io/badge/REST%20API-Render%20Cloud-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://skilltrack-backend-qfff.onrender.com)
+[![GitHub Repository](https://img.shields.io/badge/Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/isha282006/SKILLTRACK)
+
+---
+
+### 🌐 Live Production Links
+
+| Resource | Service | URL | Status |
+| :--- | :--- | :--- | :--- |
+| **Live Web App** | **Vercel** | [https://frontend-delta-one-5c2af1modk.vercel.app](https://frontend-delta-one-5c2af1modk.vercel.app) | ![Vercel](https://img.shields.io/badge/Status-Active%20(200%20OK)-success?style=flat-square) |
+| **Backend REST API** | **Render** | [https://skilltrack-backend-qfff.onrender.com](https://skilltrack-backend-qfff.onrender.com) | ![Render](https://img.shields.io/badge/Status-Live%20(200%20OK)-success?style=flat-square) |
+| **Source Code** | **GitHub** | [https://github.com/isha282006/SKILLTRACK](https://github.com/isha282006/SKILLTRACK) | ![Branch](https://img.shields.io/badge/Branch-main-blue?style=flat-square) |
+
+#### 🔑 Instant 1-Click Demo Logins:
+- **Student Terminal:** `rohit.sharma@skilltrack.com` / `Student@123`
+- **Campus Admin Terminal:** `admin@skilltrack.com` / `Admin@123`
+- **Corporate Recruiter Terminal:** `recruiter@google.com` / `Recruiter@123`
+
+---
+
 [![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Backend](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Database](https://img.shields.io/badge/Database-MySQL%208.0%20(mysql2%20%2F%20Sequelize)-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
